@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机跳转</title>
+</head>
+<body>
+    <script>
+        // 定义视频链接数组
+        const videos = [
+            "https://www.bilibili.com/video/BV1es411D7sW",
+            "https://www.bilibili.com/video/BV1GJ411x7h7"
+        ];
+        
+        // 生成随机索引
+        const randomIndex = Math.floor(Math.random() * videos.length);
+        
+        // 直接跳转到随机选择的视频
+        window.location.href = videos[randomIndex];
+    </script>
+</body>
+</html>
