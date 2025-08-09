@@ -1,227 +1,144 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homo11451419 - 个人介绍</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Microsoft YaHei', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            backdrop-filter: blur(10px);
-        }
-        
-        .header {
-            background: linear-gradient(45deg, #2c3e50, #3498db);
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-            position: relative;
-        }
-        
-        .avatar {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 5px solid rgba(255, 255, 255, 0.3);
-            margin: 0 auto 20px;
-            background: linear-gradient(45deg, #e74c3c, #f39c12);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 48px;
-            font-weight: bold;
-        }
-        
-        .username {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-        
-        .bio {
-            font-size: 1.2em;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .content {
-            padding: 40px;
-        }
-        
-        .section {
-            margin-bottom: 30px;
-        }
-        
-        .section-title {
-            font-size: 1.8em;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #3498db;
-            display: inline-block;
-        }
-        
-        .info-text {
-            font-size: 1.1em;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-        
-        .links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 40px;
-        }
-        
-        .link-btn {
-            display: inline-block;
-            padding: 15px 30px;
-            background: linear-gradient(45deg, #e74c3c, #f39c12);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.1em;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
-        }
-        
-        .link-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(231, 76, 60, 0.4);
-        }
-        
-        .link-btn:nth-child(2) {
-            background: linear-gradient(45deg, #27ae60, #2ecc71);
-            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
-        }
-        
-        .link-btn:nth-child(2):hover {
-            box-shadow: 0 8px 20px rgba(46, 204, 113, 0.4);
-        }
-        
-        .stats {
-            display: flex;
-            justify-content: space-around;
-            text-align: center;
-            margin: 30px 0;
-        }
-        
-        .stat-item {
-            padding: 20px;
-        }
-        
-        .stat-number {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #3498db;
-        }
-        
-        .stat-label {
-            color: #7f8c8d;
-            font-size: 1.1em;
-        }
-        
-        .footer {
-            text-align: center;
-            padding: 20px;
-            color: #7f8c8d;
-            border-top: 1px solid #eee;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                margin: 10px;
-                border-radius: 15px;
-            }
-            
-            .header {
-                padding: 30px 15px;
-            }
-            
-            .username {
-                font-size: 2em;
-            }
-            
-            .content {
-                padding: 20px;
-            }
-            
-            .links {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .link-btn {
-                width: 80%;
-                text-align: center;
-            }
-        }
-    </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>homo11451419 — 个人主页</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --accent1:#7c3aed;
+  --accent2:#06b6d4;
+  --muted:#94a3b8;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:'Poppins','Noto Sans SC',system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue";
+  -webkit-font-smoothing:antialiased;
+  background: radial-gradient(circle at 10% 20%, rgba(124,58,237,0.12), transparent 10%), radial-gradient(circle at 90% 80%, rgba(6,182,212,0.08), transparent 10%), linear-gradient(180deg,#071029,#041223);
+  color:#e6eef8;
+  padding:40px 20px;
+}
+.container{max-width:980px;margin:0 auto}
+.card{
+  display:flex;
+  gap:1px;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 12px 40px rgba(2,6,23,0.7);
+  border:1px solid rgba(255,255,255,0.03);
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+}
+.left{
+  flex:0 0 320px;
+  padding:36px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02));
+}
+.avatar{
+  width:140px;height:140px;border-radius:50%;display:grid;place-items:center;font-size:56px;font-weight:700;color:#08101a;background:conic-gradient(from 180deg at 50% 50%, var(--accent1), #ff7a5c, var(--accent2));padding:6px;box-shadow:0 8px 30px rgba(7,11,30,0.7);
+}
+.name{margin-top:18px;font-size:24px;font-weight:700;letter-spacing:0.6px;color:#fff}
+.handle{margin-top:6px;color:var(--muted);font-size:13px}
+.badges{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap;justify-content:center}
+.badge{background:rgba(255,255,255,0.04);padding:8px 12px;border-radius:999px;font-size:13px;color:#d7e8ff;border:1px solid rgba(255,255,255,0.03)}
+.stats{display:flex;gap:12px;margin-top:18px}
+.stat{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;text-align:center;min-width:82px}
+.stat .num{font-size:20px;font-weight:700;color:#fff}
+.stat .label{font-size:12px;color:var(--muted);margin-top:6px}
+
+.right{flex:1;padding:36px 40px;display:flex;flex-direction:column;justify-content:space-between}
+.header-row{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}
+.title{font-size:20px;font-weight:700;color:#fff}
+.subtitle{color:var(--muted);font-size:14px;margin-top:6px}
+.bio{margin-top:18px;color:#cfe9ff;line-height:1.75;font-size:15px}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:20px}
+.project{background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(0,0,0,0.02));padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+.project h3{margin:0;font-size:15px}
+.project p{margin-top:6px;font-size:13px;color:var(--muted)}
+
+.btn-row{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+.btn{display:inline-flex;gap:10px;align-items:center;padding:11px 18px;border-radius:999px;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white;text-decoration:none;font-weight:600;box-shadow:0 8px 18px rgba(7,11,30,0.6);transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-4px);box-shadow:0 18px 30px rgba(7,11,30,0.7)}
+.btn.secondary{background:linear-gradient(90deg,#334155,#0f1724);border:1px solid rgba(255,255,255,0.03)}
+.btn.linux{background:linear-gradient(90deg,#ffb86b,#ff6b6b);color:#081018}
+.card-footer{margin-top:18px;padding-top:18px;border-top:1px dashed rgba(255,255,255,0.03);display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px}
+
+@media (max-width:880px){
+  .card{flex-direction:column}
+  .left{flex:unset;padding:28px}
+  .right{padding:28px}
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="avatar">H</div>
-            <h1 class="username">homo11451419</h1>
-            <p class="bio">某普通人</p>
+<div class="container">
+  <div class="card">
+    <aside class="left">
+      <div class="avatar">H</div>
+      <div class="name">homo11451419</div>
+      <div class="handle">@某普通人</div>
+      <div class="badges">
+        <span class="badge">GitHub 新人</span>
+        <span class="badge">MIT 协议</span>
+        <span class="badge">正在学习</span>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="num">0</div><div class="label">项目经验</div></div>
+        <div class="stat"><div class="num">0</div><div class="label">技术技能</div></div>
+        <div class="stat"><div class="num">?</div><div class="label">还在摸索</div></div>
+      </div>
+    </aside>
+    <main class="right">
+      <div>
+        <div class="header-row">
+          <div>
+            <div class="title">你好，我是 <strong>homo11451419</strong></div>
+            <div class="subtitle">菜狗</div>
+          </div>
         </div>
-        
-        <div class="content">
-            <div class="stats">
-                <div class="stat-item">
-                    <div class="stat-number">0</div>
-                    <div class="stat-label">项目经验</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">0</div>
-                    <div class="stat-label">技术技能</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">?</div>
-                    <div class="stat-label">还在摸索</div>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2 class="section-title">关于我</h2>
-                <p class="info-text">我是homo11451419，一名GitHub新人。这个page目前的作用是挂两个有趣的项目。这两个项目均基于MIT协议，协议文件放置于这两个项目对应的文件夹下面。同时，本项目也基于MIT协议。</p>
-                <p class="info-text">纯纯菜人，这个HTML都是Qwen帮我写的</p>
-            </div>
-            
-            <div class="links">
-                <a href="65gen-master/index.html" class="link-btn">访问65生成器</a>
-                <a href="homo-master/index.html" class="link-btn">访问114514生成器</a>
-                <a href="random_jump_to_bilibili_videos_never_gonna_give_up_or_are_you_ok.html" class="link-btn">随机跳转视频:Never Gonna Give You Up 或 Are You OK? </a>
-            </div>
+        <div class="bio">
+          我是homo11451419，一名GitHub上的新人。这个页面主要用于托管两个有趣的小项目（MIT 协议）。你可以通过下方的按钮直接访问生成器或跳转到视频。项目源码也放在仓库里，欢迎提建议或提个 Star ❤️。
         </div>
-        
-        <div class="footer">
-            <p>&copy; 2025 homo11451419. 本项目基于MIT开源协议。</p>
+        <div class="projects">
+          <div class="project">
+            <h3>65 生成器</h3>
+            <p>通过输入数字生成“6512345”的数字经过重重变换的结果</p>
+            <div style="margin-top:10px;display:flex;gap:8px;">
+              <a class="btn secondary" href="65gen-master/index.html" target="_blank" rel="noopener noreferrer">访问</a>
+            </div>
+          </div>
+          <div class="project">
+            <h3>114514 生成器</h3>
+            <p>和前面一样，只是数字变为了114514</p>
+            <div style="margin-top:10px;display:flex;gap:8px;">
+              <a class="btn secondary" href="homo-master/index.html" target="_blank" rel="noopener noreferrer">访问</a>
+            </div>
+          </div>
+          <div class="project">
+            <h3>随机跳转视频</h3>
+            <p>随机跳转到 <em>Never Gonna Give You Up</em> 或 <em>Are You OK?</em> 的页面。</p>
+            <div style="margin-top:10px;display:flex;gap:8px;">
+              <a class="btn secondary" href="random_jump_to_bilibili_videos_never_gonna_give_up_or_are_you_ok.html" target="_blank" rel="noopener noreferrer">跳转</a>
+            </div>
+          </div>
         </div>
-    </div>
+        <div class="btn-row" style="margin-top:18px;">
+          <a class="btn linux" href="https://linux.do/u/is_hp" target="_blank" rel="noopener noreferrer">个人 LINUX DO 社区首页</a>
+          <a class="btn" href="https://github.com/homo11451419/homo11451419.github.io" target="_blank" rel="noopener noreferrer">查看仓库</a>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div>© 2025 homo11451419 · MIT</div>
+        <div>Made with ❤️ · HTML · CSS · JS</div>
+      </div>
+    </main>
+  </div>
+</div>
 </body>
 </html>
