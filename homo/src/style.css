@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+SC:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent1: #7c3aed;
+  --accent2: #06b6d4;
+  --muted: #94a3b8;
+}
+
+body {
+  background: radial-gradient(circle at 10% 20%, rgba(124, 58, 237, 0.12), transparent 10%),
+    radial-gradient(circle at 90% 80%, rgba(6, 182, 212, 0.08), transparent 10%),
+    linear-gradient(180deg, #071029, #041223);
+  color: #e6eef8;
+  -webkit-font-smoothing: antialiased;
+}
