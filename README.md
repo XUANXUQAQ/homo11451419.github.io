@@ -3,4 +3,6 @@
 
 本人纯纯就是菜，`index.html`都是Qwen帮我写的。
 ***
+本人LINUX DO首页：<a href="https://linux.do/u/is_hp">is_hp</a>
+***
 涉及到的两个项目：<a href="https://github.com/6512345/65gen">65生成器</a>与<a href="https://github.com/itorr/homo">114514生成器</a>。Thank you very much!
